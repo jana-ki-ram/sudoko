@@ -140,6 +140,15 @@ function selectTile(){
   {if(numSelected.id =="e")
   {
     this.innerText=null;
+    let coords=this.id.split("-");
+    let r= parseInt (coords[0]);
+
+    let c= parseInt (coords[1]);
+
+   // this.innerText=numSelected.id;
+
+    board[r][c]=this.innerText;
+    
   }
 else{
     let coords = this.id.split("-");
